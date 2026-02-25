@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Contact Tracker",
+  "description": "Acompanha contactos do LinkedIn e métricas de resposta, entrevistas e submissões.",
+  "version": "1.0.0",
+  "permissions": ["storage", "tabs", "activeTab"],
+  "action": {
+    "default_title": "LinkedIn Contact Tracker",
+    "default_popup": "popup.html"
+  }
+}
