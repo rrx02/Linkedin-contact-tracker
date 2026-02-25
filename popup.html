@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Contact Tracker</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>LinkedIn Contact Tracker</h1>
+
+      <section class="card">
+        <h2>Novo contacto</h2>
+        <form id="contactForm">
+          <label>
+            Nome
+            <input id="name" type="text" placeholder="Ex.: Ana Silva" required />
+          </label>
+
+          <label>
+            Link LinkedIn
+            <input id="linkedinUrl" type="url" placeholder="https://www.linkedin.com/in/..." required />
+          </label>
+
+          <div class="form-actions">
+            <button type="submit">Adicionar</button>
+            <button id="prefillCurrent" type="button" class="secondary">
+              Pré-preencher da tab atual
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Métricas</h2>
+        <div id="metrics" class="metrics"></div>
+      </section>
+
+      <section class="card">
+        <h2>Contactos</h2>
+        <p class="hint">Muda o estado para acompanhar respostas, entrevistas e submissões.</p>
+        <div id="contacts" class="contacts"></div>
+      </section>
+    </main>
+
+    <template id="contactTemplate">
+      <article class="contact-item">
+        <div class="contact-main">
+          <a class="contact-name" target="_blank" rel="noopener noreferrer"></a>
+          <small class="created-at"></small>
+        </div>
+        <div class="contact-controls">
+          <select class="status-select"></select>
+          <button class="mark-contacted" type="button">Passar a Contactado</button>
+          <button class="remove" type="button">Remover</button>
+        </div>
+      </article>
+    </template>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
