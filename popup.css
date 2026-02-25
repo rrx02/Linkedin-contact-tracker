@@ -1,0 +1,152 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 420px;
+  background: #f4f6fb;
+  color: #1f2937;
+}
+
+.app {
+  padding: 14px;
+}
+
+h1 {
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+}
+
+h2 {
+  font-size: 0.95rem;
+  margin: 0 0 10px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+form {
+  display: grid;
+  gap: 8px;
+}
+
+label {
+  display: grid;
+  gap: 4px;
+  font-size: 0.82rem;
+  color: #4b5563;
+}
+
+input,
+select,
+button {
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  padding: 8px;
+  font-size: 0.86rem;
+}
+
+button {
+  background: #2563eb;
+  border-color: #1d4ed8;
+  color: white;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: white;
+  color: #1d4ed8;
+}
+
+button.remove {
+  background: #ef4444;
+  border-color: #dc2626;
+}
+
+button.mark-contacted {
+  background: #059669;
+  border-color: #047857;
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.metric {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px;
+  background: #f9fafb;
+}
+
+.metric strong {
+  display: block;
+  font-size: 1rem;
+}
+
+.hint {
+  margin: 0 0 8px;
+  color: #6b7280;
+  font-size: 0.78rem;
+}
+
+.contacts {
+  display: grid;
+  gap: 8px;
+}
+
+.contact-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px;
+  background: #fafafa;
+}
+
+.contact-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.contact-name {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.created-at {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.contact-controls {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.empty-state {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.85rem;
+  padding: 10px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+}
