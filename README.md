@@ -115,14 +115,3 @@ No formulário da Web Store, adiciona:
 Depois de aprovada, já podes partilhar o link da extensão com outras pessoas.
 
 ---
-
-## Resumo rápido
-
-- Queres usar só para ti? → **Opção A (Load unpacked)**.
-- Queres distribuir para equipa/clientes? → **Opção B (Web Store)**.
-
----
-
-## Armazenamento dos dados
-
-Os dados dos contactos ficam guardados localmente no browser através de `chrome.storage.local`.
